@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC')
+
+body {
+	font-family: 'Noto Serif SC', serif;
+}
+
+:root {
+	--grain: #D7CEC7;
+	--blackboard: #565656;
+	--oxblood: #76323F;
+	--tan: #C09F80;
+	--blue: #D6E9FE;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+}
+
+.page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.sub-a,
+.sub-b {
+	padding: 24px;
+	margin: 3%;
+	background: var(--blue);
+	color: white;
+	width: 94%;
+}
+
+@media only screen and (min-width: 768px) {
+	.sub-a,
+	.sub-b {
+		width: 44%;
+	}
+}
